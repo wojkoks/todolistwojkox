@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navigation">
+        <a href="./index.html">main page</a>
+        <a href="./first-page.html">siema 1</a>
+        <a href="./second-page.html">siema 2</a>
+        <a href="./third-page.html">siema 3</a>
+    </div>
+    <div class="header">
+        <h1>TO DO list web app</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="column sidebar">
+            <h2>First sidebar</h2>
+            <p>Siema tutaj moglbym se cos zapisac</p>
+        </div>
+    
+        <div class="column middle">
+            <header>
+                <h2>ToDo list</h2>
+                <input type="text" placeholder="wpisuj tu cos" name="task" id="task">
+            
+            </header>
+            <ul id="tasks-list"></ul>
+            <!-- <ul>
+                <li class="ready">
+                    First task
+                    <div class="buttons">
+                        <button class="remove"></button>
+                        <button class="complete"></button>
+                    </div>
+                </li>
+                <li>
+                    second task
+                    <div class="buttons"> 
+                        <button class="remove"></button>
+                        <button class="complete"></button>
+                    </div>
+                </li>
+                <li>
+                    third task
+                    <div class="buttons">
+                        <button class="remove"></button>
+                        <button class="complete"></button>
+                    </div>
+                </li>
+            </ul> -->
+            <div id="bottom"></div>
+        </div>
+        
+        <div class="column sidebar">
+            <h2>second sidebar</h2>
+            <p>here cos tam costam
+                
+            </p>
+        </div>
+    </div>
+
+
+    <div style="clear: both;"></div>
+    <div class="boks"></div>
+    <div class="footer">
+        <p>Łysy i spółka Company &copy;</p>
+    </div>
+    <script src="./public/JS/task-list.js"></script>
+    <script src="./public/JS/new-task.js" type="module"></script>
+    <script src="./public/JS/update-task.js" type="module"></script>
+    <script src="./public/JS/delete-task.js" type="module"></script>
+</body>
+</html>

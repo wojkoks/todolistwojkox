@@ -1,0 +1,146 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family:'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+/* KOLUMNY */
+.column{
+    float:left;
+    padding: 10px;
+}
+.column.middle{
+    width:50%;
+}
+.column.sidebar{
+    float:left;
+    width:25%;
+}
+.boks{
+    margin-bottom: 10%;
+}
+
+/* header */
+.footer{
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+    left:0;
+    width:100%;
+    bottom:0;
+}
+.header {
+    background-color: bisque;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(91, 41, 0);
+}
+/* NAVIGATION */
+.navigation {
+    background-color: #8c0410;
+    overflow: hidden;
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    float:left;
+}
+.navigation a:hover{
+    background-color: #600006;
+}
+
+header {
+    background-color: #123019;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    text-indent: 16px;
+    margin-top:10px;
+}
+ /* zadania do zrobienia es :P  */
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding: 5px 15px;
+    color: #444;
+    line-height: 40px;
+    border-bottom: 3px;
+
+}
+
+.ready{
+    text-decoration: line-through;
+}
+
+.ready button.complete{
+    background-color: #7bff77;
+}
+
+#bottom {
+    background-color: #123019;
+    height: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* BUTTONS  */
+
+button{
+    width:30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+/* button.remove:hover{
+    background:none;
+    background-color: rgb(164, 3, 3);
+}
+button.complete:hover{
+    background: none;
+    background-color: rgb(0, 145, 0);
+} */
+.buttons{
+    float:right;
+}
+.buttons button{
+    border: none;
+}
+.remove{
+    background-image: url(public/images/disapprove.png);
+    background-size: contain;
+    
+}
+.complete{
+    background-image: url(public/images/approve.png) ;
+    background-size: contain;
+}
+.te{
+    text-align: center;
+}
+
+/* wyswietlanie na pletonie  */
+
+@media screen and (max-width:600px) {
+    .column.sidebar, .column.middle{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width:601px) {
+    .footer{
+        position: fixed;
+    }
+}
